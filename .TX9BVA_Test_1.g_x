@@ -1,0 +1,31 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_Compiler_SearchUserPaths</name>
+      <values lines_count="2">
+        <Line>"${ProjDirPath}/Sources"</Line>
+        <Line>"${ProjDirPath}/Generated_Code"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Documentation/TX9BVA_Test_1_Settings.xml" FileDate="2015-03-04, 21:29:25" FileAge="1425475765448" FileType="3072" />
+      <File Name="Sources/main.c" FileDate="2015-03-04, 21:29:25" FileAge="1425475765230" FileType="128" />
+      <File Name="Generated_Code/PE_Types.h" FileDate="2015-03-04, 21:29:25" FileAge="1425475765347" FileType="45637" />
+      <File Name="Sources/Events.h" FileDate="2015-03-04, 21:29:25" FileAge="1425475765140" FileType="131328" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2015-03-04, 21:29:25" FileAge="1425475765216" FileType="45637" CompNumb="4" />
+      <File Name="Sources/Events.c" FileDate="2015-03-04, 21:29:25" FileAge="1425475765125" FileType="131328" />
+      <File Name="Project_Settings/Linker_Files/ProcessorExpert.prm" FileDate="2015-03-04, 21:29:25" FileAge="1425475765171" FileType="8" CompNumb="4" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2015-03-04, 21:29:25" FileAge="1425475765191" FileType="45637" CompNumb="4" />
+      <File Name="Generated_Code/IO_Map.h" FileDate="2015-03-04, 21:29:25" FileAge="1425475765284" FileType="45637" />
+      <File Name="Generated_Code/PE_Const.h" FileDate="2015-03-04, 21:29:25" FileAge="1425475765299" FileType="45637" />
+      <File Name="Generated_Code/Vectors.c" FileDate="2015-03-04, 21:29:25" FileAge="1425475765157" FileType="45637" CompNumb="4" />
+      <File Name="Documentation/TX9BVA_Test_1.txt" FileDate="2015-03-04, 21:29:25" FileAge="1425475765489" FileType="3072" />
+      <File Name="Generated_Code/IO_Map.c" FileDate="2015-03-04, 21:29:25" FileAge="1425475765262" FileType="45637" />
+      <File Name="Documentation/TX9BVA_Test_1_SIGNALS.txt" FileDate="2015-03-04, 21:29:25" FileAge="1425475765360" FileType="3072" />
+      <File Name="Generated_Code/PE_Error.h" FileDate="2015-03-04, 21:29:25" FileAge="1425475765332" FileType="45637" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>1</CodeGenReference>
+</CodeGenerationInfo>
