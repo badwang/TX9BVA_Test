@@ -59,16 +59,24 @@ uint8_t RX_Poll(void);
 // Test_Cycles[][2] defines the test output patterns.
 // Test_Cycles[][0] is the PWM output duty cycle definition: 0-> 0%, 50-> 50% and 100 (or above)-> 100%.
 // Test_Cycles[][1] bits 2-0 are the Signal_Out[2]-[0].
-#define Test_Cycle_Num 8
+#define Test_Cycle_Num 16
 uint8_t Test_Cycles[Test_Cycle_Num][2]={
 		{ 0, 0},
-		{10, 1},
-		{20, 2},
-		{30, 3},
-		{50, 4},
-		{70, 5},
-		{90, 6},
-		{100, 7}
+		{ 0, 1},
+		{ 0, 2},
+		{ 0, 3},
+		{ 0, 4},
+		{ 0, 5},
+		{ 0, 6},
+		{ 0, 7},
+		{ 10, 0},
+		{ 20, 1},
+		{ 30, 2},
+		{ 50, 3},
+		{ 60, 4},
+		{ 70, 5},
+		{ 90, 6},
+		{ 100, 7}
 };
 
 void main(void)
