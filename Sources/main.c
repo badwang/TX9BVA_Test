@@ -91,9 +91,9 @@ void main(void)
 	  
 	  while(RX_Frame()!=ERR_OK){
 		  //Check if any key pressed.
-		  if(Button_Start_GetVal()==0){
+		  if(Button_Start_GetVal()==FALSE){
 			  Cpu_Delay100US(50);
-			  if(Button_Start_GetVal()==0){
+			  if(Button_Start_GetVal()==FALSE){
 				  //Consider button pressed.
 				  BVA_Cycles();								//Enter test cycles execution.
 			  }
@@ -233,18 +233,19 @@ void BVA_Cycles(void)
 		
 		Signal_Out_PutVal(Test_Cycles[i][1]);			//Set the Signal outputs.
 		
-		for(j=0,k=0;j<Test_Cycle_Time;j++,k++){
+		for(j=0,k=0;j<Test_Cycle_Time;k++){
 			Cpu_Delay100US(100);						//Delay 10mS.
-			if(Button_Start_GetVal()==1){
+			if(Button_Start_GetVal()!=FALSE){
 				Cpu_Delay100US(50);
-				if(Button_Start_GetVal()==1){			//Stop button pressed. 
+				if(Button_Start_GetVal()!=FALSE){			//Stop button pressed. 
 					(void) PWM_Output_SetRatio16(0);			//Set PWM duty cycle to 0.
 					Signal_Out_PutVal(0);				//Set Signal outputs to 0.
 					LED_Status_PutVal(1);				//Make status LED off.
 					return;								//Quit.
 				}
 			}
-			if(k==25){
+			if(Button_Stop_GetVal()!=FALSE)j++;
+			if(k==10){
 				k=0;
 				LED_Status_NegVal();					//Make status LED blinking.
 			}
